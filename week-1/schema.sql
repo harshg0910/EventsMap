@@ -13,6 +13,7 @@ CREATE TABLE Event (
 	FOREIGN KEY(locationId) REFERENCES Location(locationId)
 );
 
+
 CREATE TABLE Location (
 	locationId	INT AUTO_INCREMENT PRIMARY KEY,
 	mainLand	ENUM('SAC','LT', 'MCOM', 'NAC', 'HOSTEL') NOT NULL,
@@ -21,13 +22,22 @@ CREATE TABLE Location (
 
 CREATE TABLE Login (
 	loginId		VARCHAR(40) PRIMARY KEY,
-	passwd		VARCHAR(40) NOT NULL,
+	-- SHA2-512 hash
+	passwdHash	VARCHAR(512) NOT NULL,
+	-- need to give it a thought
+	salt		VARCHAR(20) NOT NULL,
+	attemptCount	INT,
 	post		VARCHAR(40) NOT NULL
 );
+
+-- on client side
+-- Event table is same except that it includes one more field
+-- 	isRead	BOOL
 
 CREATE TABLE Remainder (
 	time		TIMESTAMP NOT NULL,
 	eventId		LONGINT,
+	category	ENUM('HOSTEL', 'ACADEMIC', 'SPORTS', 'CULTURAL', 'TECHNICAL', 'ALCHER', 'TECHNICHE') NOT NULL,
 	FOREIGN KEY (eventId) REFERENCES Event(eventId)
 );
 
