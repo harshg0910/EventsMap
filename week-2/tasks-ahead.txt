@@ -1,0 +1,32 @@
+1) Forgot pass 
+	--> 	Email Verification
+
+2) Admin Approval in Registration
+	-->	Login Table flag like approved
+	    	Delete Logins
+
+3) Profile Preferences 
+	--> 	Change password
+		Email-ID
+
+4) Validation checks at server end 
+	--> 	Keep the current Javascript validations
+		but also have checks at server 
+
+5) Event Interface 
+	--> 	Add Event
+		Edit Event
+
+6) Map --> BrainStorm
+	which library?
+	Or Google Map API
+	Dynamic Addition of nodes
+
+7) Client Side
+	-->	Database SQLite
+	-->	UI
+
+-- Features
+1) Profile table
+	--> separate email & post from Login
+
