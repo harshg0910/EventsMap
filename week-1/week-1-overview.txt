@@ -1,0 +1,33 @@
+/* 
+ * EventsMap 1.0	Overview Week-01
+ *
+ * 
+ * Anil Kag 	10010111
+ * Sejal Sharma 10010160
+ * Harsh Gupta	10010122
+ * Neha Goyal	10010137
+ */
+
+Server [in JSP]
+ - Each authenticated user has login details & can login on server, & post 
+	event news. These users can be anyone of the club secys or hostel
+	authorities etc.
+ 	Added security features in the Login Class & Server ER-Diagram.
+
+Client [JAVA Application]
+ - Client has an application installed for interfacing with the Server
+	This application fetches information from the server & displays
+	events on the map, based on client's personalized favourites &
+	categories.
+	Notifications for updated events in favourites category.
+	Reminders for the events selected by user.
+
+ - For syncing the news, we keep a local cache on client's machine & whenever
+	client gets connected to the server, we fetch events ending after current time.
+
+ 	If client is always connected to the server, client has the option to  manually
+		update or client polls server for the updates [MAY BE INEFFICIENT
+		BUT FOR THE TIME BEING WE'LL WORK WITH IT]
+
+
+
