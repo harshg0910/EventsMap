@@ -1,0 +1,6 @@
+- Reminder table
+eventID foreign key events
+reminder time
+
+- Events table
+as on server
