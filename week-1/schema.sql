@@ -5,7 +5,7 @@ use EventsMapServer;
 
 CREATE TABLE Login (
 	loginId		INT AUTO_INCREMENT PRIMARY KEY,
-	userName	VARCHAR(40) NOT NULL,
+	userName	VARCHAR(40) NOT NULL UNIQUE,
 	-- SHA2-512 hash
 	passwdHash	VARCHAR(512) NOT NULL,
 	-- need to give it a thought
@@ -64,6 +64,13 @@ CREATE TABLE Event (
 -- 	category	ENUM('HOSTEL', 'ACADEMIC', 'SPORTS', 'CULTURAL', 'TECHNICAL', 'ALCHER', 'TECHNICHE') NOT NULL,
 -- 	FOREIGN KEY (eventId) REFERENCES Event(eventId)
 -- );
+
+DROP TRIGGER IF EXISTS `insert_Event_trigger`;
+DELIMITER //
+CREATE TRIGGER `insert_Event_trigger` BEFORE INSERT ON `Event`
+ FOR EACH ROW SET NEW.`modifiedTime` = NOW()
+//
+DELIMITER ;
 
 DROP TRIGGER IF EXISTS `update_Event_trigger`;
 DELIMITER //
