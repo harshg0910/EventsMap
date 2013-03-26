@@ -1,0 +1,25 @@
+1) Admin Section
+	- Edit Event
+	- Update Event
+	- Delete Event
+	- Add Category, Mainland
+
+2) User Profile Settings
+	- Change password, email
+
+-- Resolved but some policy issues still left
+2) MainLand, Category
+	- Duplicate issues
+	- Make things local
+
+3) Checks in AddEvent.java & jsp for invalid values
+	Register JSP --> Javascript check
+
+2) Put filters & session dependency
+
+3) Sync Module
+	For fetching the data from server
+
+4) Client Side SQLite database
+
+
