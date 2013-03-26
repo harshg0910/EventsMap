@@ -1,0 +1,41 @@
+11/3/2013: ER-diagram, Class diagram, Schemas, List of  projected queries,
+List of constraints, Relations and Maps.
+
+18/3/2013: Creating the database and review the above design.
+
+25/3/2013: Creating Interface for data insertion, deletion, search and
+update, reviewing the design
+
+1/4/2013: Report generation, Testing the design constraints. Applying
+query optimization, indexing and normalization
+
+8/4/2013: Final development process
+
+15/4/2013: Final evaluation of the project (any recommendation made on
+8/4/2013 should be incorporated before presenting for the evaluation)
+
+------------------------------------------------
+
+Server Interface (JSP, Tomcat)
+	- Login Module
+		- Implement Hash calculation + Salt
+			+ attemptCount
+		- Verification of Email
+		- Forgot Password
+
+	- Event Addition Module
+		- add Event
+		- update Event
+
+
+Client Interface (JAVA Application)
+	- Map 
+		- Index
+		- Navigation
+		- show Map
+
+	- Sync News
+	- Reminder
+	- Set Preferences
+	- Notifications on favourites
+
