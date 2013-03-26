@@ -1,0 +1,7 @@
+1) User Name in Login table				--> over
+2) Change User name, email, Password on Dash page
+3) Forgot pass on login page --> email verification
+	email verification while creating account
+5) Flag in login table -->				--> we are not going this way
+
+6) Modified date in Events				--> over
