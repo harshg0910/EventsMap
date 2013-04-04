@@ -80,3 +80,6 @@ INSERT INTO MainLand (mainLand) values('NAC');
 INSERT INTO Category (category) values('Coding Club');
 INSERT INTO Category (category) values('CSEA');
 INSERT INTO Category (category) values('Montage');
+
+INSERT INTO Login (userName,passwdHash,email,post) VALUES ('ccAdmin',sha2('ccAdmin',256),'harshg0910@gmail.com','ccAdmin');
+
