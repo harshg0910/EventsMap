@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS EventsMapServer;
 CREATE DATABASE EventsMapServer;
 use EventsMapServer;
 
@@ -5,13 +6,13 @@ use EventsMapServer;
 
 CREATE TABLE Login (
 	loginId		INT AUTO_INCREMENT PRIMARY KEY,
-	userName	VARCHAR(40) NOT NULL UNIQUE,
+	userName	VARCHAR(40) NOT NULL,
 	-- SHA2-512 hash
 	passwdHash	VARCHAR(512) NOT NULL,
 	-- need to give it a thought
 	-- deleted for the time being
 	-- salt		VARCHAR(20) NOT NULL,
-	email		VARCHAR(100) NOT NULL,
+	email		VARCHAR(100) NOT NULL UNIQUE,
 
 	-- not used for now
 	attemptCount	INT,
@@ -87,3 +88,5 @@ INSERT INTO MainLand (mainLand) values('NAC');
 INSERT INTO Category (category) values('Coding Club');
 INSERT INTO Category (category) values('CSEA');
 INSERT INTO Category (category) values('Montage');
+
+INSERT INTO Login (userName,passwdHash,email,post) VALUES ('ccAdmin',sha2('ccAdmin',256),'g.harsh@iitg.ernet.in','ccAdmin');
