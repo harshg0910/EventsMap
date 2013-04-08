@@ -1,0 +1,13 @@
+Monitor events
+Reset User Account
+Redirect after AddEvent, AddUser
+
+Email-Id --> remove uniquess
+If more than 1 then ask with which post he wants to login 
+
+ADD A POST
+POST drop down while adding a user
+
+
+Keep track of last server modification time in server
+if it is modified then fetch further
