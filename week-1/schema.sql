@@ -73,13 +73,9 @@ CREATE TRIGGER `update_Event_trigger` BEFORE UPDATE ON `Event`
 DELIMITER ;
 
 -- Insert queries for the different tables
-INSERT INTO MainLand (mainLand) values('SAC');
-INSERT INTO MainLand (mainLand) values('LT');
-INSERT INTO MainLand (mainLand) values('NAC');
-
 
 INSERT INTO Category (category) values('Coding Club');
 INSERT INTO Category (category) values('CSEA');
 INSERT INTO Category (category) values('Montage');
 
-INSERT INTO Login (userName,passwdHash,email,post) VALUES ('ccAdmin',sha2('ccAdmin',256),'g.harsh@iitg.ernet.in','ccAdmin');
+INSERT INTO Login (userName,passwdHash,email,post) VALUES ('ccadmin',sha2('ccadmin',256),'g.harsh@iitg.ernet.in','ccadmin');
