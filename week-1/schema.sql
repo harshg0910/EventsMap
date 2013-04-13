@@ -74,8 +74,4 @@ DELIMITER ;
 
 -- Insert queries for the different tables
 
-INSERT INTO Category (category) values('Coding Club');
-INSERT INTO Category (category) values('CSEA');
-INSERT INTO Category (category) values('Montage');
-
 INSERT INTO Login (userName,passwdHash,email,post) VALUES ('ccadmin',sha2('ccadmin',256),'g.harsh@iitg.ernet.in','ccadmin');

@@ -1,12 +1,18 @@
 Monitor events
-Reset User Account
-Redirect after AddEvent, AddUser
+Filtering of events
+settings -> change password and redirection
+in update event : drop down for mainLand, prefecthing of the existing values not working
+TODO: status values --> change to three values SCHEDULED, MODIFIED, CANCELLED[?]
 
-Email-Id --> remove uniquess
-If more than 1 then ask with which post he wants to login 
+DONE : JS form validation
+DONE Reset User Account
+DONE Redirect after AddEvent, AddUser
 
-ADD A POST
-POST drop down while adding a user
+DONE Email-Id --> remove uniquess
+DONE If more than 1 then ask with which post he wants to login 
+
+DONE ADD A POST
+DONE POST drop down while adding a user
 
 TextArea in AddEvent content field
 - Any other UI changes in the HTML Pages
